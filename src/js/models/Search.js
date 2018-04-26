@@ -10,7 +10,9 @@ export default class Search {
     // https://food2fork.com/about/api
     try {
       const response = await axios(
-        `${config.PROXY}${config.API_URL}?key=${config.API_KEY}&q=${this.query}`
+        `${config.PROXY}${config.API_URL}search?key=${config.API_KEY}&q=${
+          this.query
+        }`,
       );
       this.result = response.data.recipes;
     } catch (error) {
