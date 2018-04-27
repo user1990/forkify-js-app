@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
-  "author": "Paulius Rimgaila",
+  "author": "user1990",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
