@@ -9,18 +9,19 @@ const formatCount = count => {
   if (count) {
     // count = 2.5 --> 2 1/2
     // count = 0.5 --> 1/2
-    const [number, decimal] = count
+    const newCount = Math.round(count * 10000) / 10000; // Fixes to long numers error
+    const [number, decimal] = newCount
       .toString()
       .split('.')
       .map(el => parseInt(el, 10));
 
-    if (!decimal) return count;
+    if (!decimal) return newCount;
 
     if (number === 0) {
-      const fr = new Fraction(count);
+      const fr = new Fraction(newCount);
       return `${fr.numerator}/${fr.denominator}`;
     } else {
-      const fr = new Fraction(count - number);
+      const fr = new Fraction(newCount - number);
       return `${number} ${fr.numerator}/${fr.denominator}`;
     }
   }
