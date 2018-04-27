@@ -2,17 +2,16 @@
 
 A Simple Vanilla JavaScript App for searching recipes.
 
-- Search for recipes
-- Show recipes list
-- Particular recipe info (ingredients, servings)
-- Adding to shopping list (change quantity, delete records)
-- Save recipes in your favorites list
+* [x] **Search for recipes**
+* [x] **Particular recipe info (ingredients, servings)**
+* [x] **Adding to shopping list (change quantity, delete records)**
+* [x] **Save recipes in your favorites list**
 
 ### Features
 
-* Modern JavaScript in 2018: NPM, Webpack, Babel & Eslint setup
-* Separating code into ES6 modules for maintainability and reusability
-* Code written in ES6, ES7 and ES8
+* [x] **Modern JavaScript in 2018: NPM, Webpack, Babel & Eslint setup**
+* [x] **Separating code into ES6 modules for maintainability and reusability**
+* [x] **Code written in ES6, ES7 and ES8**
 
 ### Setup
 
